@@ -21,6 +21,11 @@ public class StartGame : MonoBehaviour
         {
             SceneManager.LoadScene("GAME");
         }
+        //もしクリックしたらシーンを変える
+        if (Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene("GAME");
+        }
 
     }
 }

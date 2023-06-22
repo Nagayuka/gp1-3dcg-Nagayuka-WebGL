@@ -20,5 +20,11 @@ public class Crear : MonoBehaviour
             SceneManager.LoadScene("GAMESTART");
         }
 
+                //もしクリックしたらシーンを変える
+        if (Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene("GAME");
+        }
+
     }
 }

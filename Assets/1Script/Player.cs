@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public AudioClip oku;
     private Rigidbody PlayerRb;
-    public float speed = 100f;
+    public float speed = 10f;
     public float dashMultiplier = 2f;
     public GameObject boxPrefab; // 箱のプレハブをアサインする
     private bool isDashing = false;
@@ -75,11 +75,11 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(0, 0.5f, 0);
+            transform.Rotate(0, 0.2f, 0);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(0, -0.5f, 0);
+            transform.Rotate(0, -0.2f, 0);
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {

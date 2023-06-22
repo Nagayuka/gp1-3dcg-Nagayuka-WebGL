@@ -2137,7 +2137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oku: {fileID: 8300000, guid: d6fe9c66759fa4f8aa975f1ad1058c79, type: 3}
-  speed: 11
+  speed: 5
   dashMultiplier: 2
   boxPrefab: {fileID: 5276816961414133926, guid: 06acd2860642c4aa0b7dde34ab77ba84,
     type: 3}

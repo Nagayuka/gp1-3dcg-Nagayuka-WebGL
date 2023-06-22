@@ -64,6 +64,11 @@ public class MyGameManager : MonoBehaviour
         {
             DayCountText.text = "NIGHT"; // DayCountが0になったらYORUと表示する
         }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            SceneManager.LoadScene("GAMESTART");
+        }
     }
 
     void SpawnBear()

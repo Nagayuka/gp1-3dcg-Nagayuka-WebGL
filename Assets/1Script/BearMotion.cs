@@ -29,6 +29,8 @@ public class BearMotion : MonoBehaviour
 
             GetComponent<AudioSource>().PlayOneShot(nakigoe);
 
+        }else{
+            n=2;
         }
     }
 
@@ -50,6 +52,10 @@ public class BearMotion : MonoBehaviour
         {
             PlayerRb.AddRelativeForce(-Vector3.forward * speed);
             transform.Rotate(0, 0.5f, 0);
+        }else if(n==2)//右に少しズレる
+        {
+            PlayerRb.AddRelativeForce(Vector3.right * speed);
+            n=0;
         }
         else
         {
