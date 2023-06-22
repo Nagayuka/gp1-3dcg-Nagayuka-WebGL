@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 5c8d5031ce45e4962818ca2b5426a8cf, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f865216a552324d939e1ef714f6321c1, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18411145, g: 0.52460915, b: 0.8398966, a: 1}
+  m_IndirectSpecularColor: {r: 0.2621259, g: 0.70091647, b: 0.83179533, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -334,12 +334,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171945595}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 251e2f92d845043bdbb1e12d829ee558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oku: {fileID: 0}
+  oku: {fileID: 8300000, guid: d6fe9c66759fa4f8aa975f1ad1058c79, type: 3}
   speed: 10
   dashMultiplier: 2
   boxPrefab: {fileID: 5276816961414133926, guid: 06acd2860642c4aa0b7dde34ab77ba84,
@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb4173e2d9ce4b3c8a3460231dbace4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  piyo: {fileID: 0}
+  piyo: {fileID: 8300000, guid: 8866a9516f96a4a9dac8608e14fad010, type: 3}
   movementSpeed: 20
   rotationSpeed: 10
 --- !u!65 &1780030484
