@@ -6,9 +6,9 @@ public class Player : MonoBehaviour
 {
     public AudioClip oku;
     private Rigidbody PlayerRb;
-    public float speed = 10f;
+    public float speed = 1.5f; // 速度を1に変更する
     public float dashMultiplier = 2f;
-    public GameObject boxPrefab; // 箱のプレハブをアサインする
+    public GameObject boxPrefab;
     private bool isDashing = false;
 
     void Start()
@@ -23,7 +23,6 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3(-70, transform.position.y, transform.position.z);
         }
-
 
         if (transform.position.z < -70)
         {
@@ -40,9 +39,6 @@ public class Player : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, 70);
         }
 
-
-
-
         if (Input.GetKey(KeyCode.UpArrow))
         {
             if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
@@ -56,23 +52,24 @@ public class Player : MonoBehaviour
                 PlayerRb.AddRelativeForce(Vector3.forward * speed);
             }
         }
-        else if (Input.GetKey(KeyCode.DownArrow)) // 下キーを押した場合
+        else if (Input.GetKey(KeyCode.DownArrow))
         {
             if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             {
                 isDashing = true;
-                PlayerRb.AddRelativeForce(-Vector3.forward * speed * dashMultiplier); // 後退方向に力を加える
+                PlayerRb.AddRelativeForce(-Vector3.forward * speed * dashMultiplier);
             }
             else
             {
                 isDashing = false;
-                PlayerRb.AddRelativeForce(-Vector3.forward * speed); // 後退方向に力を加える
+                PlayerRb.AddRelativeForce(-Vector3.forward * speed);
             }
         }
         else
         {
             Stop();
         }
+
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Rotate(0, 0.2f, 0);
@@ -86,19 +83,16 @@ public class Player : MonoBehaviour
             PlaceBox();
         }
     }
+
     void Stop()
     {
         PlayerRb.velocity = Vector3.zero;
         PlayerRb.angularVelocity = Vector3.zero;
     }
+
     void PlaceBox()
     {
-        // プレハブから箱を生成
         GameObject box = Instantiate(boxPrefab, transform.position + 5.0f * transform.forward, transform.rotation);
         GetComponent<AudioSource>().PlayOneShot(oku);
     }
-
-
 }
-
-
