@@ -334,12 +334,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171945595}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 251e2f92d845043bdbb1e12d829ee558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oku: {fileID: 8300000, guid: d6fe9c66759fa4f8aa975f1ad1058c79, type: 3}
+  oku: {fileID: 0}
   speed: 10
   dashMultiplier: 2
   boxPrefab: {fileID: 5276816961414133926, guid: 06acd2860642c4aa0b7dde34ab77ba84,
@@ -450,7 +450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0099182, y: 313}
+  m_AnchoredPosition: {x: 0.0099182, y: 217.30017}
   m_SizeDelta: {x: 1920, y: 349.5191}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1210815253
@@ -960,7 +960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0050049, y: -533}
+  m_AnchoredPosition: {x: 0.0050049, y: -502}
   m_SizeDelta: {x: 1920, y: 252.1196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376307909
@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb4173e2d9ce4b3c8a3460231dbace4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  piyo: {fileID: 8300000, guid: 8866a9516f96a4a9dac8608e14fad010, type: 3}
+  piyo: {fileID: 0}
   movementSpeed: 20
   rotationSpeed: 10
 --- !u!65 &1780030484
