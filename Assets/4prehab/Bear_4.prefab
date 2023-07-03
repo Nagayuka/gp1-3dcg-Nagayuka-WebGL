@@ -459,7 +459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nakigoe: {fileID: 8300000, guid: cae07cf4ce6d243ea8d21784cc8b62e6, type: 3}
-  duck: {fileID: 166016, guid: f657c58adb4c219419ae056411d88e27, type: 3}
+  duck: {fileID: 5216151158517727068, guid: 4f68e5fcc08d6431086c8dbd304f183c, type: 3}
   speed: 5
 --- !u!82 &1813492970543642576
 AudioSource:
